@@ -16,9 +16,10 @@ public enum ErrorDetail {
 	HARD_UPGRADE_REQUIRED("USERMS_1005", "hard.upgrade.required", ErrorType.SYSTEM, "Hard upgrade required."),
 
 	// 2xxx VALIDATION errors
-	USER_NOT_FOUND("USERMS_2006", "user.not.found", ErrorType.VALIDATION , "User not found."),
-	USER_ALREADY_EXISTS("USERMS_2007", "user.already.exists", ErrorType.VALIDATION , "User already exists."),
-	INVALID_USER_CREDENTIALS("USERMS_2008", "invalid.user.credentials", ErrorType.VALIDATION , "Invalid user credentials.");
+	USER_NOT_FOUND("USERMS_2001", "user.not.found", ErrorType.VALIDATION , "User not found."),
+	USER_ALREADY_EXISTS("USERMS_2002", "user.already.exists", ErrorType.VALIDATION , "User already exists."),
+	INVALID_USER_CREDENTIALS("USERMS_2003", "invalid.user.credentials", ErrorType.VALIDATION , "Invalid user credentials."),
+	WALLET_CREATION_FAILED("USERMS_2004","wallet.creation.failed", ErrorType.BUSINESS, "Wallet creation failed.");
 	
 	private static final String TO_STRING_TEMPLATE = "code: %s, propertyKey: %s, errorType: %s, defaultMessage: %s";
 

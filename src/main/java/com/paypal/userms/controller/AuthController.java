@@ -19,7 +19,7 @@ public class AuthController {
 	@Autowired
 	private AuthServiceImpl authServiceImpl;
 
-	@PostMapping("/api/userms/v1/signup")
+	@PostMapping("/api/auth/v1/signup")
 	public GenericResponse signup(@RequestBody SignupRequest signupRequest) {
 		long currentTime = System.currentTimeMillis();
 		try {
@@ -29,7 +29,7 @@ public class AuthController {
 		}
 	}
 
-	@PostMapping("/api/userms/v1/login")
+	@PostMapping("/api/auth/v1/login")
 	public GenericResponse login(@RequestBody LoginRequest loginRequest) {
 		long currentTime = System.currentTimeMillis();
 		try {
